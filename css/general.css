@@ -1,0 +1,62 @@
+body {
+    text-align:center;
+    font-family:'Segoe UI Symbol','Calibri','Times New Roman','Trebuchet', "sans-serif";
+    background-image: url("../img/bludot.jpg");
+}
+h1{
+    text-align:left;
+    font-family:'Segoe UI Symbol', 'Calibri','Times New Roman','Trebuchet','sans-serif';
+    color: #dde7ff;
+    position: relative;
+    left: 2%;
+}
+h2{
+    font-family:'Segoe UI Symbol', 'Calibri','Times New Roman','Trebuchet','sans-serif';
+    font-size:24px;
+    color:#639bc6;
+    position:relative;
+    left: 5%;
+    padding:0px;
+}
+
+#headboard{
+    background-color: #639bc6;
+    padding:6px;
+}
+
+#content_wrap{
+    width:900px;
+    margin:auto;
+    background-color: #dde7ff;
+}
+
+p{
+    font-family: "Consolas", "Menlo", "Courier", monospace;
+    font-size:11px;
+    position:relative;
+    left: 1%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+a:link, a:visited {
+    display: inline-block;
+    width: 168.4px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #639bc6;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #226bb7;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+
+    <!--IMPORT JSAPI FOR GOOGLE CHARTS/ other chart stuff-->
+    <script type="text/javascript" src="https://www.google.com/jsapi">window.alert('hellow');</script>
+    <script type="text/javascript">google.load("visualization", "1", {packages:['bar','table',"corechart","map","controls", "line"]})</script>
+
+    <!--LINK MY FILES-->
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/charts.css">
+    <script type="text/javascript" src="barTest.js"></script>
+    <script type="text/javascript" src="bellTest.js"></script>
+    <script type="text/javascript" src="bellTestJetBlue.js"></script>
+    <script type="text/javascript" src="hi.js"></script>
+
+</head>
+<body>
+
+<div id="content_wrap" align="left">
+
+    <div id="headboard"><h1>Test Data</h1></div><br>
+
+    <a href="html/Display2.html">Ookla Data Viz</a>
+    <a href="dataViz.html">Pi Data Viz</a>
+    <a href="https://www.google.com/fusiontables/data?docid=15mGURXxMmRLFXokW4gnBrF-bVKnQT9jlc7kEG4f3#rows:id=1">Test Database</a>
+
+    <!--<h2 align="left">Response Time</h2>
+    <label class="select">Choose a graph to display:</label>
+    <select class="select" onchange="drawLine(value);">
+        <option value=1 selected="selected">Response Time vs. Date/Time</option>
+        <option value=2>Response Time vs. Iteration Number</option>
+    </select>
+    <div class="dashboard_container" align="center">
+        <div id="line_dash" align="left">
+            <div class="range-slider" id="line_range"></div>
+            <div class="range-slider" id="line_dropdown"></div>
+        </div>
+        <div id="line"></div>
+    </div>-->
+
+    <h2 align="left">Bar Charts</h2>
+
+    <label class="select">Choose a graph to display:</label>
+    <select class="select" onchange="drawBar(value);">
+        <option value=1 selected="selected">Cold View</option>
+        <option value=2>Warm View</option>
+        <option value=3>Site Average</option>
+    </select>
+    <div class="dashboard_container" align="center">
+    <div id="bar_dash" align="left">
+        <div class="range-slider" id="bar_range"></div>
+        <div class="range-slider" id="bar_dropdown"></div>
+    </div>
+    <div id="bar"></div>
+    </div>
+
+    <label class="select">Choose a graph to display:</label>
+    <select class="select" onchange="drawBell(value);">
+        <option value=1 selected="selected">4 bins</option>
+        <option value=2>8 bins</option>
+    </select>
+    <div class="dashboard_container" align="center">
+        <div id="bell_dash" align="left">
+            <div class="range-slider" id="bell_range"></div>
+            <div class="range-slider" id="bell_dropdown"></div>
+        </div>
+        <div id="bell"></div>
+    </div>
+
+    <div class="dashboard_container" align="center">
+        <div id="bell-jet_dash" align="left">
+            <div class="range-slider" id="bell-jet_range"></div>
+            <div class="range-slider" id="bell-jet_dropdown"></div>
+        </div>
+        <div id="bell-jet"></div>
+    </div>
+
+    <div id="line2"></div>
+
+    <br><br><br><br><br><br>
+    <p align="left">ViaSat Inc. © 2015 Raspberry Pi Project Data Visualization by Erica Weng</p>
+
+</div>
+
+</body>
+</html>

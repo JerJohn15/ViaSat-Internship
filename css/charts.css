@@ -1,0 +1,33 @@
+#map{
+    width:700px;
+    height:450px;
+    margin:auto;
+}
+#table{
+    height:500px;
+    width:800px;
+}
+#table_dash{
+    width: 500px;
+    height: 150px;
+}
+
+#line_dash{
+    width: 500px;
+    height: 100px;
+}
+
+.range-slider{
+    padding:5px;
+}
+.dashboard_container{
+    margin:auto;
+    padding:15px;
+}
+.dashboard{
+    margin:auto;
+}
+.select{
+    position:relative;
+    left:2.3%;
+}

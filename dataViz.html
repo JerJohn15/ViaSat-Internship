@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rasp Pi Data Viz</title>
+
+    <!--IMPORT JSAPI FOR GOOGLE CHARTS/ other chart stuff-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">google.load("visualization", "1", {packages:['bar','table',"corechart","map","controls", "line"]})</script>
+
+    <!--LINK MY FILES-->
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/charts.css">
+    <script type="text/javascript" src="tablePi.js"></script>
+    <script type="text/javascript" src="mapPi.js"></script>
+    <script type="text/javascript" src="linePi.js"></script>
+    <script type="text/javascript" src="barPi.js"></script>
+
+</head>
+<body>
+
+<div id="content_wrap" align="left">
+
+    <div id="headboard"><h1>Data Visualization Raspberry Pi Data</h1></div><br>
+
+    <a href="html/Display2.html">Ookla Data Viz</a>
+    <a href="test.html">Test Data</a>
+    <a href="https://wiki.viasat.com/pages/viewpage.action?pageId=72257314">ViaSat Wiki: Viz</a>
+    <a href="https://wiki.viasat.com/pages/viewpage.action?title=What+to+shoot+for+the+next+couple+of+weeks&spaceKey=SBI">ViaSat Wiki: TODO</a>
+    <a href="https://www.google.com/fusiontables/DataSource?docid=1ra6ZZmVhrCKJwprhfvqOBBQYv7-ABglEJZ6jYnCE">Rasp Pi Database</a>
+
+    <h2 align="left">Map</h2>
+    <div class="viz" id="map"></div>
+
+    <h2 align="left">Response Time</h2>
+    <label class="select">Choose a graph to display:</label>
+    <select class="select" onchange="drawLine(value);">
+        <option value=1 selected="selected">Response Time vs. Date/Time</option>
+        <option value=2>Response Time vs. Iteration Number</option>
+    </select>
+    <div class="dashboard_container" align="center">
+        <div id="line_dash" align="left">
+            <div class="range-slider" id="line_range"></div>
+            <div class="range-slider" id="line_dropdown"></div>
+        </div>
+        <div id="line"></div>
+    </div>
+
+    <h2 align="left">Bar Charts</h2>
+    <div class="dashboard_container" align="center">
+        <div id="bar_dash" align="left">
+            <div class="range-slider" id="bar_range"></div>
+            <div class="range-slider" id="bar_dropdown"></div>
+        </div>
+        <div id="bar"></div>
+    </div>
+
+    <h2 align="left">Table</h2>
+    <div class="dashboard_container" align="center">
+        <div id="table_dash" align="left">
+            <div class="range-slider" id="table_range1"></div>
+            <div class="range-slider" id="table_range2"></div>
+            <div class="range-slider" id="table_range3"></div>
+            <div class="range-slider" id="table_dropdown"></div>
+        </div>
+        <div id="table"></div>
+    </div>
+
+    <br><br><br><br><br><br>
+    <p align="left">ViaSat Inc. © 2015 Raspberry Pi Project Data Visualization by Erica Weng</p>
+
+</div>
+
+</body>
+</html>
